@@ -2,7 +2,7 @@
 And I'm a learning programmer and hobbyist aspiring to use my God-given skills for His kingdom.
 
 #### Languages
-I've learned HTML, CSS, and JS, as well as a bit of React and Django
+I've learned HTML, CSS, and JS, as well as a bit of React and Django.
 I also use Python for [Project Euler](https://github.com/tang0226/projectEuler).  
   
 #### Projects
