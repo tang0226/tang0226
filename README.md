@@ -10,8 +10,9 @@ I mainly use Python for [Project Euler](https://github.com/tang0226/projectEuler
 I love to experiment with math and computer science. I enjoy fractals, digital logic, Project Euler, cellular automata, the chaos game, emergent behavior, neural networks, and vanilla coding in TI-Basic.
 
 ### Projects
-* [Fracture](https://github.com/tang0226/fracture): an escape-time fractal viewer built with HTML Canvas and a lot of frontend Javascript. The app is hosted via Github pages at [tang0226.github.io](https://tang0226.github.io/fracture/src/main).
-* [NNJS](https://github.com/tang0226/nnjs): a bare-bones implementation of a feed-forward neural network tested with survival-of-the-fittest training on a basic flappy-bird game.
+* [Fracture](https://github.com/tang0226/fracture): an escape-time fractal viewer built with HTML Canvas and a lot of frontend Javascript. Renders Mandelbrot, Burning ship, and Tricorn fractals, as well as their Julia sets and exponential variants. Other basic features include canvas resizing, image downloading, and custom gradients. The app is hosted via Github pages at [tang0226.github.io](https://tang0226.github.io/fracture/src/main).
+* [nnjs](https://github.com/tang0226/nnjs): my bare-bones implementation of a feed-forward neural network tested with survival-of-the-fittest training on a basic flappy-bird game.
+* [nnjs2](https://github.com/tang0226/nnjs2/tree/main): a recreation started a year after nnjs; more customizable and better geared for basic network training. This repo also contains various experiments / mini-projects, such as 1D and 2D function approximation. I am working on these experiments as I build out the library's functionality and learn about ML along the way.
 * [Kaprekar](https://github.com/tang0226/kaprekar): a canvas visualization of fractal patterns resulting from the [Kaprekar Routine](https://en.wikipedia.org/wiki/Kaprekar%27s_routine). Similar to escape-time fractals, each point on the canvas represents a number in some base, colored based on the number of iterations before the Kaprekar Routine starts repeating. Fractals really are everywhere!
 * [Other HTML canvas projects](https://github.com/tang0226/canvas-projects): various simulations, screensavers, and experiments I've built as I've been learning canvas.
 
