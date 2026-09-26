@@ -1,0 +1,22 @@
+---
+title: Fracture Reborn
+summary: A fully browser-based fractal renderer
+year: 2026
+tags: ["JS", "Canvas", "WebGL"]
+featured: true
+role: Creator, Developer
+repo: "https://github.com/tang0226/fracture-reborn"
+---
+
+## Background
+I first learned about the Mandelbrot set and escape-time fractals in eighth grade. At the time, I was already familiar with fractal-esque pictures and art, such as Sierpinski's triangle and various works by M.C. Escher. These images fascinated me with their uncanny ability to make me feel impossibly small, and that sense of awe inspired me to explore these shapes for myself.
+
+I created my first fractal viewer, [Fracture 1.0](https://github.com/tang0226/fracture), in high school. Development was smooth for a time, but the code quickly became a hopeless ad-hoc mess due to my naive development practices and lack of experience.
+
+After multiple failed attempts to redesign the app's UI and architecture, I turned to Claude Code and ChatGPT with the mission of creating a manageable JS UI library from scratch. To learn as much as possible, I did my best to implement all the features by hand, confirming that I understood everything line I was writing. The result was a React-like toolkit with an imitation of Redux state management: a powerful foundation for building the complex frontend UI of Fracture's successor.
+
+## Architecture
+Once the UI framework was finished, I had Claude use it to build the fractal app.\
+The app works by dynamically generating iterator functions based on the current settings (iteration count, fractal type, exponent, etc.). The iterator function outputs iteration and orbit trap data, which is fed into a colorizer that applies palettes to produce the final rendered image. These operations are split by canvas region among several worker threads.
+
+`UI input  -->codegen engine-->  iterator function  -->iteration workers-->  pixel-level iteration data  -->colorizer workers-->  final image data`

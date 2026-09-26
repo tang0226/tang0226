@@ -1,0 +1,31 @@
+---
+title: RL Agent
+summary: My first reinforcement learning agent, trained in a 2D physics-based environment
+year: 2025
+tags: ["Python", "Pytorch", "Machine learning"]
+featured: true
+role: Creator, Developer
+repo: "https://github.com/tang0226/ai-assignment-3-rl-agent"
+---
+
+## Architecture
+In this project, I created a 2D low-friction environment for an agent to navigate. The environment contains a goal point; each time the agent touches the goal, the goal respawns in a new random location. The agent must learn to reach as many goals as possible within a defined time limit.
+
+Each timestep, the agent outputs a distribution for the four possible actions (up, down, left, and right). An action is randomly sampled, causing the agent to accelerate in that direction.
+
+The agent is rewarded for approaching and reaching the goal; it is penalized for moving away from the goal, or falling out of bounds. After each fixed-length episode, the app calculates the discounted returns for each action the agent took.
+
+These returns are used to train the model's baseline network to predict expected return given a particular action in a particular state. The agent's behavior is updated by reinforcing or discouraging actions depending on their overall performance when compared to baseline predictions.
+
+Libraries used in this project:
+- Gymnasium for the custom environment
+- Pytorch for neural net training
+- Pygame for environment rendering
+- Matplotlib for data visualization
+
+## Results:
+Example environment render:
+![environment render](/projects/rl-agent-env.png)
+
+Training graphs:
+![training graphs](/projects/rl-agent-graphs.png)
